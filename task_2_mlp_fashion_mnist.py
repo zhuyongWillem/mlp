@@ -3,12 +3,7 @@
 # Email: yong_zzhu@163.com
 # Time：2021/3/11 22:06
 
-import pandas as pd
-import numpy as np
 from matplotlib import pyplot as plt
-plt.rcParams['font.sans-serif']=['SimHei']
-plt.rcParams['axes.unicode_minus']=False
-
 from keras.models import Sequential
 from keras.layers import Dense,Activation
 from keras.datasets import fashion_mnist
@@ -55,5 +50,5 @@ label_dict = {0:'T shirt',1:'裤子',2:'套头衫',3:'裙子',4:'外套',5:'凉�
 img2 = x_train[80]
 fig2 = plt.figure(figsize=(3,3))
 plt.imshow(img2)
-plt.title(label_dict[y_train_predict[80]])
+plt.title(label_dict[y_train_predict[80]],{'family':'SimHei'})
 plt.show()
